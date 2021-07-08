@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#f6feff"
+    android:elevation="7dp"
+    app:cardCornerRadius="9dp"
+    android:foreground="?selectableItemBackground"
+    app:cardUseCompatPadding="true"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+  <ImageView
+      android:id="@+id/imageview"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:scaleType="centerCrop"
+      />
+        <TextView
+            android:id="@+id/foodNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cake"
+            android:textStyle="bold"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/foodDesTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item is Delicious"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
